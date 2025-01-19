@@ -18,6 +18,9 @@ export default {
         lightmodeBG2: "#e4e5f1",
         lightmodeFont: "#484b6a",
       },
+      ontFamily: {
+        raleway: "var(--font-raleway)",
+      },
       fontSize: {
         14: "0.875rem",
         16: "1rem",
