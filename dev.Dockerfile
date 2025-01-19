@@ -5,18 +5,18 @@ FROM node:22.13.0-alpine
 WORKDIR /app
 
 # gets the package.json and package-lock.json
-COPY portfolio/package.json /app/package.json
-COPY portfolio/package-lock.json /app/package-lock.json
+COPY website/package.json /app/package.json
+COPY website/package-lock.json /app/package-lock.json
 
 # install the dependencies
 RUN npm install
 
 # Copy the rest of the files
-COPY portfolio/. /app/
+COPY website/. /app/
 
 # Expose the port
 EXPOSE 3000
 
 # Start the app     
-CMD ["npm", "run", "dev", "turbo"]
+CMD ["npm", "run", "dev", "--turbo"]
 
