@@ -14,11 +14,15 @@ export default {
       colors: {
         switchDarkMode: "#95c2ff",
         switchLightMode: "#f7c631",
-        ligghtmodeBG: "#fafafa",
-        lightmodeBG2: "#e4e5f1",
-        lightmodeFont: "#484b6a",
+        ligghtmodeBG: "#FFFFFF",
+        lightmodeBG2: "#F8FAFC",
+        lightmodeFont1: "#484b6a",
+        lightmodeFont2: "#000000",
+        darkmodeBG1: "#0f0f0f",
+        darkmodeBG2: "#000000",
+        darkmodeFont: "#ffffff",
       },
-      ontFamily: {
+      fontFamily: {
         raleway: "var(--font-raleway)",
       },
       fontSize: {
@@ -44,6 +48,7 @@ export default {
         colors: {
           background: "#FFFFFF",
           foreground: "#000000",
+          primary:"#FEF2F2",
         },
       },
       dark: {
