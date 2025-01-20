@@ -6,10 +6,10 @@ export const MoonIcon = (props) => {
     <svg
       aria-hidden="true"
       focusable="false"
-      height="1,5em"
+      height="1.5em"
       role="presentation"
       viewBox="0 0 24 24"
-      width="1,5em"
+      width="1.5em"
       {...props}
     >
       <path
@@ -25,10 +25,10 @@ export const SunIcon = (props) => {
     <svg
       aria-hidden="true"
       focusable="false"
-      height="1,5em"
+      height="1.5em"
       role="presentation"
       viewBox="0 0 24 24"
-      width="1,5em"
+      width="1.5em"
       {...props}
     >
       <g fill="#d14009">
