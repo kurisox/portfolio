@@ -1,5 +1,3 @@
-export const  homeURL = "/";
-
 const navbar_content = [
     {
         title: "LEBENSLAUF",
