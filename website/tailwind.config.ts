@@ -21,6 +21,7 @@ export default {
         darkmodeBG1: "#0f0f0f",
         darkmodeBG2: "#000000",
         darkmodeFont: "#ffffff",
+        changelog: "#fff3cd",
       },
       fontFamily: {
         raleway: "var(--font-raleway)",
