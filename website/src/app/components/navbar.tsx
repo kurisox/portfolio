@@ -1,6 +1,7 @@
 "use client";
 import { getNavbarContent } from "../content_config/navbar_config";
 import {authorConfig} from "@/app/content_config/author/authorDetails";
+import { mockDetails } from "@/app/content_config/author/mockDetails";
 import React from "react";
 import {
   Navbar,
@@ -15,7 +16,7 @@ import ThemeSwitch from "./themeSwitch";
 
 export default function NavigationBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const author = authorConfig.name;
+  const author = process.env.NEXT_PUBLIC_DEV_MODE === 'true' ? mockDetails.name : authorConfig.name;
 
   return (
     <Navbar
