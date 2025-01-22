@@ -13,9 +13,9 @@ export default {
     extend: {
       colors: {
         switchDarkMode: "#95c2ff",
-        switchLightMode: "#f7c631",
+        switchLightMode: "#d14009",
         ligghtmodeBG: "#FFFFFF",
-        lightmodeBG2: "#F8FAFC",
+        lightmodeBG2: "#fafbff",
         lightmodeFont1: "#484b6a",
         lightmodeFont2: "#000000",
         darkmodeBG1: "#0f0f0f",
