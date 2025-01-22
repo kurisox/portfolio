@@ -1,5 +1,6 @@
 "use client";
 import { getNavbarContent } from "../content_config/navbar_config";
+import {authorConfig} from "../content_config/author_config";
 import React from "react";
 import {
   Navbar,
@@ -14,7 +15,7 @@ import ThemeSwitch from "./themeSwitch";
 
 export default function NavigationBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const author = String(process.env.NEXT_PUBLIC_AUTHOR).replace(/['"]/g, "");
+  const author = authorConfig.name;
 
   return (
     <Navbar
@@ -24,7 +25,7 @@ export default function NavigationBar() {
     >
       <NavbarContent>
         <NavbarBrand>
-          <p className="text-24 font-raleway text-lightmodeFont1 hover:text-red-800 dark:text-darkmodeFont">
+          <p className="text-24 font-raleway text-lightmodeFont1 dark:text-darkmodeFont">
             {author}
           </p>
         </NavbarBrand>
