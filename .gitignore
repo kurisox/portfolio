@@ -39,3 +39,8 @@
 # typescript
 /website/*.tsbuildinfo
 /website/next-env.d.ts
+
+# content config details
+/website/src/app/content_config/career/careerlogDetails.ts
+/website/src/app/content_config/author/authorDetails.ts
+/website/src/app/content_config/career/logentryDetails.ts
