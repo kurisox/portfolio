@@ -8,8 +8,8 @@ import { authorConfig } from "../content_config/author_config";
 
 export default function Hero() {
   return (
-    <div className="width-screen bg-lightmodeBG1 dark:bg-darkmodeBG1 pt-4 pb-4">
-      <div className="flex flex-col items-center ml-auto mr-auto w-5/6 md:flex-row md:justify-center md:items-start md:gap-20 md:w-2/3 lg:w-1/2">
+    <div className="  pt-4 pb-4">
+      <div className="flex flex-col items-center ml-auto mr-auto w-5/6 md:w-2/3 2xl:flex-row 2xl:justify-center 2xl:items-start 2xl:gap-20 2xl:w-1/2">
         <div className="flex-shrink-0 pb-2">
           <Image
             src={profilePicture}
@@ -28,7 +28,7 @@ export default function Hero() {
           <p className="pb-5 text-20 text-lightmodeFont2 dark:text-darkmodeFont">
             {authorConfig.description}
           </p>
-          <hr className="pb-5 border-t-2 border-red-100 dark:border-darkmodeFont" />
+          <hr className="pb-5 border-t-1 border-switchLightMode dark:border-switchDarkMode" />
           <p className="text-20 text-lightmodeFont2 dark:text-darkmodeFont">
             <span className="font-bold">Interessen: </span>
             {authorConfig.interests}
@@ -41,7 +41,7 @@ export default function Hero() {
             <span className="font-bold">Interessen: </span>
             {authorConfig.voluntarywork}
           </p>
-          <hr className="pb-5 border-t-2 border-red-100 dark:border-darkmodeFont" />
+          <hr className="pb-5 border-t-1 border-switchLightMode dark:border-switchDarkMode" />
           <div className="flex flex-row justify-evenly">
             <EmailLogo />
             <GithubLogo />

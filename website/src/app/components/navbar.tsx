@@ -36,13 +36,13 @@ export default function NavigationBar() {
         </NavbarItem>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="text-lightmodeFont1 dark:text-darkmodeFont md:hidden"
+          className="text-lightmodeFont1 hover:scale-105 hover:text-switchLightMode dark:text-darkmodeFont dark:hover:text-switchDarkMode md:hidden"
         />
         {getNavbarContent().map((item, index) => (
-          <NavbarItem className="hidden md:flex" key={index}>
+          <NavbarItem className="hidden hover:scale-105  md:flex" key={index}>
             <a
               href={item.url}
-              className="text-18 font-raleway text-lightmodeFont1 hover:text-red-800 dark:text-darkmodeFont dark:hover:text-red-400"
+              className="text-18 font-raleway text-lightmodeFont1 hover:text-switchLightMode dark:text-darkmodeFont dark:hover:text-switchDarkMode"
             >
               {item.title}
             </a>
@@ -54,7 +54,7 @@ export default function NavigationBar() {
           <NavbarMenuItem key={`${item}-${index}`}>
             <a
               href={item.url}
-              className="text-18 font-raleway text-lightmodeFont1 hover:text-red-800 dark:text-darkmodeFont dark:hover:text-red-400"
+              className="text-18 font-raleway text-lightmodeFont1 hover:text-switchLightMode dark:text-darkmodeFont dark:hover:text-switchDarkMode"
             >
               {item.title}
             </a>
