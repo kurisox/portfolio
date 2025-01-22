@@ -43,9 +43,9 @@ export default function Hero() {
           </p>
           <hr className="pb-5 border-t-1 border-switchLightMode dark:border-switchDarkMode" />
           <div className="flex flex-row justify-evenly">
-            <EmailLogo />
-            <GithubLogo />
-            <LinkedinLogo />
+            <EmailLogo email={authorConfig.email}/>
+            <GithubLogo link={authorConfig.github}/>
+            <LinkedinLogo link={authorConfig.linkedin}/>
           </div>
         </div>
       </div>
