@@ -1,5 +1,4 @@
 "use client";
-import { changelogConfig } from "@/app/content_config/career/careerlogDetails";
 import { logEntryConfig } from "@/app/content_config/career/logentryDetails";
 import { mockLogentry } from "@/app/content_config/career/mockLogentryDetails";
 import LogEntry from "./logentry";
@@ -15,7 +14,11 @@ export default function Carrerlog() {
           </h1>
           <div className="p-4 mb-8 bg-changelog dark:text-lightmodeFont2 flex flex-row justify-center items-center gap-2">
             <p className="text-18 text-lightmodeFont2 dark:text-lightmodeFont2">
-              {changelogConfig.disclaimer}
+              Dieser Lebenslauf ist ein kleines, spaßiges Experiment um meinen
+              beruflichen und schulischen Werdegang in Form eines Changelogs
+              einer Software darzustellen. Für einen vollständigen Überblick
+              über meine Erfahrungen und Fähigkeiten, schau dir doch gerne meine 
+              klassischen Lebenslauf an. <a href="http://localhost:3000/lebenslauf/LebenslaufAnlagen.pdf" download="LebenslaufAnlagen.pdf" className="text-switchLightMode dark:text-switchDarkMode">&gt;Hier&lt;</a> kannst du meinen Lebenslauf als PDF herunterladen.
             </p>
           </div>
           <p className="text-18 text-lightmodeFont2 dark:text-darkmodeFont">
