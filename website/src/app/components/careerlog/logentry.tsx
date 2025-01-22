@@ -1,4 +1,4 @@
-import { LogEntryProps } from "../../content_config/logentry_config";
+import { LogEntryProps } from "../../content_config/career/logentry_config";
 
 function added(entry: { added: boolean }) {
   return entry.added ? (

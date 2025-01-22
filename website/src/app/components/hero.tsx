@@ -4,7 +4,7 @@ import profilePicture from "../../../public/profile_picture/profile_mobile.png";
 import { EmailLogo } from "./logos/emailLogo";
 import { GithubLogo } from "./logos/githubLogo";
 import { LinkedinLogo } from "./logos/linkedinLogo";
-import { authorConfig } from "../content_config/author_config";
+import {authorConfig}  from "@/app/content_config/author/authorDetails";
 
 export default function Hero() {
   return (

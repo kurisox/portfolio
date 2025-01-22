@@ -1,6 +1,6 @@
 "use client";
 import { getNavbarContent } from "../content_config/navbar_config";
-import {authorConfig} from "../content_config/author_config";
+import {authorConfig} from "@/app/content_config/author/authorDetails";
 import React from "react";
 import {
   Navbar,

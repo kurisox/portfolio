@@ -1,6 +1,6 @@
 "use client";
-import { changelogConfig } from "../../content_config/careerlog_config";
-import { logEntryConfig } from "../../content_config/logentry_config";
+import { changelogConfig } from "@/app/content_config/career/careerlogDetails";
+import { logEntryConfig } from "@/app/content_config/career/logentryDetails";
 import LogEntry from "./logentry";
 export default function Carrerlog() {
   return (
