@@ -5,7 +5,7 @@ export const logEntryConfig: LogEntryProps[] = [
       entry: {
         added: true,
         version: "2.1.0",
-        position: "Auszubildender Fachinformatiker für Anwendungsentwicklung",
+        position: "Auszubildender Fachinformatiker Anwendungsentwicklung",
         company: "Unternehmensgruppe Brüder Schlau",
         startDate: "Aug 2022",
         endDate: "Jan 2025",

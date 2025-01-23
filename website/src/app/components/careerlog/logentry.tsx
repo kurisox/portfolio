@@ -2,8 +2,8 @@ import { LogEntryProps } from "../../content_config/career/logentry_config";
 
 function added(entry: { added: boolean }) {
   return entry.added ? (
-    <p className="text-20 font-raleway font-bold pt-4 pb-2  text-lightmodeFont2 dark:text-darkmodeFont">
-      Added
+    <p className="text-20 font-raleway font-bold pt-4 pb-2  text-lightmodeFont2 dark:text-darkmodeFont md:text-28">
+      Added:
     </p>
   ) : (
     <></>
@@ -13,12 +13,12 @@ function added(entry: { added: boolean }) {
 function deprecated(entry: { deprecated: string }) {
   return entry.deprecated.length > 0 ? (
     <div>
-      <p className="text-20 font-raleway font-bold pt-4 pb-2  text-lightmodeFont2 dark:text-darkmodeFont">
-        Deprecated: 
+      <p className="text-20 font-raleway font-bold pt-4 pb-2  text-lightmodeFont2 dark:text-darkmodeFont md:text-28">
+        Deprecated:
       </p>
-      <ul className="list-item pl-6">
-        <li className="list-disc text-18 font-raleway  text-lightmodeFont2 dark:text-darkmodeFont">{entry.deprecated}</li>
-      </ul>
+      <p className="text-18 pl-2 font-raleway text-lightmodeFont2 dark:text-darkmodeFont md:text-20">
+        &#x2022; {entry.deprecated}
+      </p>
     </div>
   ) : (
     <></>
@@ -28,12 +28,12 @@ function deprecated(entry: { deprecated: string }) {
 function changed(entry: { changed: string }) {
   return entry.changed.length > 0 ? (
     <div>
-      <p className="text-20 font-raleway font-bold pt-4 pb-2  text-lightmodeFont2 dark:text-darkmodeFont">
-        Changed: 
+      <p className="text-20 font-raleway font-bold pt-4 pb-2  text-lightmodeFont2 dark:text-darkmodeFont md:text-28">
+        Changed:
       </p>
-      <ul className="list-item pl-6">
-        <li className="list-disc text-18 font-raleway  text-lightmodeFont2 dark:text-darkmodeFont">{entry.changed}</li>
-      </ul>
+      <p className="text-18 pl-2 font-raleway text-lightmodeFont2 dark:text-darkmodeFont md:text-20">
+        &#x2022; {entry.changed}
+      </p>
     </div>
   ) : (
     <></>
@@ -42,26 +42,20 @@ function changed(entry: { changed: string }) {
 
 export default function LogEntry({ entry }: LogEntryProps) {
   return (
-    <div className="pb-8">
-      <h1 className="text-28 font-raleway font-bold text-lightmodeFont2 dark:text-darkmodeFont">
-        {entry.version} - {entry.position}@
-      </h1>
-      <h2 className="text-24 font-raleway  text-lightmodeFont2 dark:text-darkmodeFont">
-        {entry.company} ({entry.startDate} bis {entry.endDate})
-      </h2>
-      {added(entry)}
-      <ul className="list-item pl-6">
+    <div className="  pt-4 pb-4 ">
+      <div className="flex flex-col ">
+        <h1 className="font-raleway text-24 font-bold text-lightmodeFont2 dark:text-darkmodeFont md:text-32">
+          {entry.version} - {entry.position} @ {entry.company} ({entry.startDate} - {entry.endDate})
+        </h1>
+        {added(entry)}
         {entry.description.map((desc, index) => (
-          <li
-            className="list-disc text-18 font-raleway  text-lightmodeFont2 dark:text-darkmodeFont"
-            key={index}
-          >
-            {desc}
-          </li>
-        ))}
-      </ul>
-      {deprecated(entry)}
-      {changed(entry)}
+          <p key={index} className="text-18 pl-2 font-raleway text-lightmodeFont2 dark:text-darkmodeFont md:text-20">
+            &#x2022; {desc}
+          </p>
+        ))}  
+        {deprecated(entry)}
+        {changed(entry)}
+      </div>
     </div>
   );
 }
