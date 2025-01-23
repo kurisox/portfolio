@@ -89,7 +89,7 @@ export const logEntryConfig: LogEntryProps[] = [
         version: "1.0.0",
         position: "Bauzeichner im Hochbau",
         company: "IGS ING.-BÜRO BAUWESEN",
-        startDate: "Okt 16",
+        startDate: "Okt 2016",
         endDate: "Jul 2019",
         description: [
           "Anfertigung von Bauantragsformularen",
