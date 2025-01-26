@@ -13,6 +13,7 @@ import {
   NavbarMenuItem,
 } from "@heroui/react";
 import ThemeSwitch from "./themeSwitch";
+import { it } from "node:test";
 
 export default function NavigationBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -52,7 +53,8 @@ export default function NavigationBar() {
       </NavbarContent>
       <NavbarMenu className="bg-lightmodeBG2 dark:bg-darkmodeBG2 ">
         {getNavbarContent().map((item, index) => (
-          <NavbarMenuItem className="pb-2" key={`${item}-${index}`}>
+          <NavbarMenuItem onClick={() => {console.log(item.url);
+          }} className="pb-2" key={`${item}-${index}`}>
             <a
               href={item.url}
               className="text-18 font-raleway text-lightmodeFont1 hover:text-switchLightMode dark:text-darkmodeFont dark:hover:text-switchDarkMode"
