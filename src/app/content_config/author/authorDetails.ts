@@ -8,8 +8,8 @@ export const authorConfig: AuthorConfig = {
       "Ich liebe es mich in neue Technologien oder Entwicklungsmethoden einzulesen und komplexe technische " +
       "Herausforderungen zu lösen.",
     interests:
-      "Java, JUnit, Mockito und Spring Boot, Docker, CI/CD, DevOps, Microservices,Clean Code, " +
-      "Test Driven Development und seit neuestem CSharp und .NET Core",
+      "Java, JUnit, Mockito und Spring Boot, C#, NextJs, CI/CD, Github Action, Docker, Kubernetes, Microservices, Clean Code, " +
+      "Test Driven Development",
     hobbies: "Outdoor-Aktivitäten mit meinem Hund, schwimmen und alles rund ums Kochen",
     voluntarywork: "Umweltschutz auf vier Pfoten und regelmäßiges Blutspenden",
     email: "capsiusjanhenrik.bewerbung@gmail.com",
