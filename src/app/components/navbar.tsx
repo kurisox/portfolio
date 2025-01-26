@@ -13,10 +13,15 @@ import {
   NavbarMenuItem,
 } from "@heroui/react";
 import ThemeSwitch from "./themeSwitch";
+import { get } from "lodash";
 
 export default function NavigationBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const author = process.env.NEXT_PUBLIC_DEV_MODE === 'true' ? mockDetails.name : authorConfig.name;
+  const NavbarCt = getNavbarContent();
+  console.log(NavbarCt[0].url);
+  
+  
 
   return (
     <Navbar
