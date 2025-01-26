@@ -1,7 +1,7 @@
 const navbar_content = [
     {
         title: "LEBENSLAUF",
-        url: "/"
+        url: "portfolio"
     },
     {
         title: "PROJEKTE",
