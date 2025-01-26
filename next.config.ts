@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
 
+const basepath = process.env.GITHUB_ACTIONS ? "/nextjs-github-pages" : "";
+
+
+
 const nextConfig: NextConfig = {
-  /* config options here */
+  basePath: basepath,
 };
 
 export default nextConfig;
