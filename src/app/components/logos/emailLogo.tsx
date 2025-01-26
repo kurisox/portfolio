@@ -17,7 +17,7 @@ const EmailDisplay: React.FC<{ email: string; onClose: () => void }> = ({
         className="w-5/6 bg-white p-4 rounded flex justify-center md:w-2/3 dark:text-lightmodeFont2 ml-auto mr-auto 2xl:w-1/2"
         onClick={(e) => e.stopPropagation()}
       >
-        <p>Meine Email-Adresse: {email} {process.env.NEXT_PUBLIC_HOME_URL}</p>
+        <p>Meine Email-Adresse: {email}</p>
       </div>
     </div>
   );
