@@ -18,8 +18,11 @@ export default function Carrerlog() {
               Dieser Lebenslauf ist ein kleines, spaßiges Experiment um meinen
               beruflichen und schulischen Werdegang in Form eines Changelogs
               einer Software darzustellen. Für einen vollständigen Überblick
-              über meine Erfahrungen und Fähigkeiten, schreib mir doch gerne eine Email 
-              und ich sende dir meinen Lebenslauf und sonstige Anlagen zu :)
+              über meine Erfahrungen und Fähigkeiten, kannst du dir gerne{" "}
+              <a href="./lebenslauf/LebenslaufUndAnlagen.pdf" className="text-switchLightMode dark:text-switchDarkMode">
+                &gt;hier&lt;{" "} 
+              </a>
+              meinen klassischen Lebenslauf ansehen.
             </p>
           </div>
           <p className="text-18 text-lightmodeFont2 dark:text-darkmodeFont md:text-20">
