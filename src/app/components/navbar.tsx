@@ -13,7 +13,6 @@ import {
   NavbarMenuItem,
 } from "@heroui/react";
 import ThemeSwitch from "./themeSwitch";
-import { it } from "node:test";
 
 export default function NavigationBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
