@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const basepath = process.env.GITHUB_ACTIONS ? "/nextjs-github-pages" : "";
+const basepath = process.env.GITHUB_ACTIONS ? "/portfolio" : "";
 
 
 
