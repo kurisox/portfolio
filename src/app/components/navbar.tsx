@@ -1,6 +1,6 @@
 "use client";
 import { getNavbarContent } from "../content_config/navbar_config";
-import {authorConfig} from "@/app/content_config/author/authorDetails";
+import { authorConfig } from "@/app/content_config/author/authorDetails";
 import { mockDetails } from "@/app/content_config/author/mockDetails";
 import React from "react";
 import {
@@ -13,10 +13,14 @@ import {
   NavbarMenuItem,
 } from "@heroui/react";
 import ThemeSwitch from "./themeSwitch";
+import Link from "next/link";
 
 export default function NavigationBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const author = process.env.NEXT_PUBLIC_DEV_MODE === 'true' ? mockDetails.name : authorConfig.name;
+  const author =
+    process.env.NEXT_PUBLIC_DEV_MODE === "true"
+      ? mockDetails.name
+      : authorConfig.name;
 
   return (
     <Navbar
@@ -41,19 +45,24 @@ export default function NavigationBar() {
         />
         {getNavbarContent().map((item, index) => (
           <NavbarItem className="hidden hover:scale-105  md:flex" key={index}>
-            <a
+            <Link
               href={item.url}
               className="text-18 font-raleway text-lightmodeFont1 hover:text-switchLightMode dark:text-darkmodeFont dark:hover:text-switchDarkMode"
             >
               {item.title}
-            </a>
+            </Link>
           </NavbarItem>
         ))}
       </NavbarContent>
       <NavbarMenu className="bg-lightmodeBG2 dark:bg-darkmodeBG2 ">
         {getNavbarContent().map((item, index) => (
-          <NavbarMenuItem onClick={() => {console.log(item.url);
-          }} className="pb-2" key={`${item}-${index}`}>
+          <NavbarMenuItem
+            onClick={() => {
+              console.log(item.url);
+            }}
+            className="pb-2"
+            key={`${item}-${index}`}
+          >
             <a
               href={item.url}
               className="text-18 font-raleway text-lightmodeFont1 hover:text-switchLightMode dark:text-darkmodeFont dark:hover:text-switchDarkMode"
