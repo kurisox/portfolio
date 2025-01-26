@@ -1,11 +1,14 @@
 "use client";
-import { logEntryConfig } from "@/app/content_config/career/logentryDetails";
+import { logEntryConfig } from "@/app/content_config/career/workEntryDetails";
+import {schoolEntryConfig} from "@/app/content_config/career/schoolEntryDetails";
 import { mockLogentry } from "@/app/content_config/career/mockLogentryDetails";
 import LogEntry from "./logentry";
 
 export default function Carrerlog() {
-  const logEntry =
+  const workEntry =
     process.env.NEXT_PUBLIC_DEV_MODE === "true" ? mockLogentry : logEntryConfig;
+  const schoolEntry = process.env.NEXT_PUBLIC_DEV_MODE === "true" ? [] : schoolEntryConfig;
+
   return (
     <div className="  pt-4 pb-4 ">
       <div className="flex flex-col items-center ml-auto mr-auto w-5/6 md:w-2/3 2xl:flex-row 2xl:justify-center 2xl:items-start 2xl:gap-20 2xl:w-1/2">
@@ -48,8 +51,11 @@ export default function Carrerlog() {
             .
           </p>
           <br />
-          {logEntry.map((logEntry, index) => (
-            <LogEntry key={index} entry={logEntry.entry} />
+          {workEntry.map((workEntry, index) => (
+            <LogEntry key={index} entry={workEntry.entry} />
+          ))}
+          {schoolEntry.map((schoolEntry, index) => (
+            <LogEntry key={index} entry={schoolEntry.entry} />
           ))}
         </div>
       </div>
