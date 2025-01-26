@@ -1,9 +1,7 @@
-const home_url = process.env.NEXT_PUBLIC_HOME_URL;
-
 const navbar_content = [
     {
         title: "LEBENSLAUF",
-        url: String(home_url)
+        url: "/"
     },
     {
         title: "PROJEKTE",
