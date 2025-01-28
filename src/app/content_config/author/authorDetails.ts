@@ -4,9 +4,7 @@ export const authorConfig: AuthorConfig = {
     name: "Jan-Henrik Capsius",
     jobtitle: "Junior Software Developer",
     description:
-      "Ich bin Junior Softwareentwickler mit dem Schwerpunkt auf Backend- und DevOps Entwicklung. " +
-      "Ich liebe es mich in neue Technologien oder Entwicklungsmethoden einzulesen und komplexe technische " +
-      "Herausforderungen zu lösen.",
+      "Als Junior Softwareentwickler liegt mein Schwerpunkt auf der Backend- und DevOps-Entwicklung. Ich begeistere mich dafür, mich in neue Technologien und moderne Entwicklungsmethoden einzuarbeiten, und finde großen Spaß daran, komplexe technische Herausforderungen zu lösen.",
     interests:
       "Java, JUnit, Mockito und Spring Boot, C#, NextJs, CI/CD, Github Action, Docker, Kubernetes, Microservices, Clean Code, " +
       "Test Driven Development",

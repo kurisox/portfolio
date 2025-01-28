@@ -18,7 +18,7 @@ export default function Carrerlog() {
           </h1>
           <div className="p-4 mb-8 bg-changelog dark:text-lightmodeFont2 flex flex-row justify-center items-center gap-2">
             <p className="text-18 text-lightmodeFont2 dark:text-lightmodeFont2 md:text-20">
-              Dieser Lebenslauf ist ein kleines, spaßiges Experiment um meinen
+              Dieser Lebenslauf ist ein kleines, spaßiges Experiment, um meinen
               beruflichen und schulischen Werdegang in Form eines Changelogs
               einer Software darzustellen. Für einen vollständigen Überblick
               über meine Erfahrungen und Fähigkeiten, kannst du dir gerne{" "}
