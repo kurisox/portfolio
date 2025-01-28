@@ -57,18 +57,15 @@ export default function NavigationBar() {
       <NavbarMenu className="bg-lightmodeBG2 dark:bg-darkmodeBG2 ">
         {getNavbarContent().map((item, index) => (
           <NavbarMenuItem
-            onClick={() => {
-              console.log(item.url);
-            }}
             className="pb-2"
-            key={`${item}-${index}`}
+            key={index}
           >
-            <a
+             <Link
               href={item.url}
               className="text-18 font-raleway text-lightmodeFont1 hover:text-switchLightMode dark:text-darkmodeFont dark:hover:text-switchDarkMode"
             >
               {item.title}
-            </a>
+            </Link>
           </NavbarMenuItem>
         ))}
       </NavbarMenu>
