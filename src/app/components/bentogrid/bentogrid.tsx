@@ -1,6 +1,5 @@
 "use client";
 import { cn } from "@/app/components/bentogrid/utils";
-import Link from "next/link";
 
 export const BentoGrid = ({
   className,
