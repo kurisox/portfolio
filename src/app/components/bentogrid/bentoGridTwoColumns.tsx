@@ -5,7 +5,7 @@ import { projects } from "@/app/content_config/projects/projectDetails";
 export function BentoGridTwoColumns() {
   
   return (
-    <BentoGrid className="max-w-6xl pt-10 pb-10 mx-auto md:auto-rows-[20rem]">
+    <BentoGrid className="max-w-6xl pt-10 pb-10 mx-auto md:auto-rows-[20rem] hidden-overflow">
       {projects.map((item, i) => (
         <BentoGridItem
           key={i}
