@@ -40,7 +40,7 @@ export const projects = [
   },
   {
     title: "Portfolio",
-    link: "https://github.com/kurisox/Buechereiverwaltung",
+    link: "https://github.com/kurisox/portfolio",
     description: "Meine Portfolio-Website",
     header: (
       <Skeleton picture={portfolio} description="Drawn picture of a shiba" />
