@@ -51,6 +51,7 @@ interface ExtendedLogEntryProps extends LogEntryProps {
 
 export default function LogEntry({ entry, index }: ExtendedLogEntryProps) {
   const [scrollDirection, setScrollDirection] = useState<'up' | 'down'>('up');
+  const [amount, setAmount] = useState(0.35);
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
@@ -69,6 +70,14 @@ export default function LogEntry({ entry, index }: ExtendedLogEntryProps) {
     };
   }, [scrollDirection]);
 
+  useEffect(() => {
+    if (window.innerWidth <= 1971) {
+      setAmount(0.1);
+    } else {
+      setAmount(0.35);
+    }
+  }, [amount]);
+
   const initialY = scrollDirection === 'up' ? 50 : -50;
   
   return (
@@ -78,7 +87,7 @@ export default function LogEntry({ entry, index }: ExtendedLogEntryProps) {
         initial={{ opacity: 0, y: initialY }}
         whileInView={{ opacity:1, y: 0 }}
         transition={{ duration: 0.75}}
-        viewport={{amount: window.innerWidth <= 1971 ? 0.1 : 0.35 }}
+        viewport={{amount: amount }}
         className="flex flex-col "
       >
         <h1 className="font-raleway text-24 font-bold text-lightmodeFont2 dark:text-darkmodeFont md:text-32">
