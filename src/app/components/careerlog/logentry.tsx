@@ -1,3 +1,6 @@
+'use client';
+
+import { useEffect, useState } from "react";
 import { LogEntryProps } from "../../content_config/career/logentry_config";
 
 import { motion } from "framer-motion";
@@ -47,15 +50,35 @@ interface ExtendedLogEntryProps extends LogEntryProps {
 }
 
 export default function LogEntry({ entry, index }: ExtendedLogEntryProps) {
-  const delay = index === 0 ? 1.5 : 0;
+  const [scrollDirection, setScrollDirection] = useState<'up' | 'down'>('up');
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+    const updateScrollDirection = () => {
+      const scrollY = window.scrollY;
+      const direction = scrollY > lastScrollY ? 'down' : 'up';
+      if (direction !== scrollDirection) {
+        setScrollDirection(direction);
+      }
+      lastScrollY = scrollY > 0 ? scrollY : 0;
+    };
+
+    window.addEventListener('scroll', updateScrollDirection);
+    return () => {
+      window.removeEventListener('scroll', updateScrollDirection);
+    };
+  }, [scrollDirection]);
+
+  const initialY = scrollDirection === 'up' ? 50 : -50;
+  
   return (
     <div className="pt-4 pb-4">
       <motion.div
         key={index}
-        initial={{ opacity: 0, y: 50}}
+        initial={{ opacity: 0, y: initialY }}
         whileInView={{ opacity:1, y: 0 }}
-        transition={{ duration: 0.75, delay:delay}}
-        viewport={{once: true}}
+        transition={{ duration: 0.75}}
+        viewport={{amount: window.innerWidth <= 1971 ? 0.1 : 0.35 }}
         className="flex flex-col "
       >
         <h1 className="font-raleway text-24 font-bold text-lightmodeFont2 dark:text-darkmodeFont md:text-32">
