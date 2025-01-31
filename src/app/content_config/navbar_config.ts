@@ -1,6 +1,6 @@
 const navbar_content = [
     {
-        title: "LEBENSLAUF",
+        title: "HOME",
         url: "/"
     },
     {

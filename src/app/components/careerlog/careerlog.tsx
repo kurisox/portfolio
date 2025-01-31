@@ -37,7 +37,7 @@ export default function Carrerlog() {
                 Überblick über meine Erfahrungen und Fähigkeiten, kannst du dir
                 gerne{" "}
                 <a
-                  href="./lebenslauf/LebenslaufUndAnlagen.pdf"
+                  href="./lebenslauf/Unterlagen_Jan_Henrik_Capsius.pdf"
                   className="text-switchLightMode dark:text-switchDarkMode"
                 >
                   &gt;hier&lt;{" "}

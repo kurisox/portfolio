@@ -10,6 +10,7 @@ export const logEntryConfig: LogEntryProps[] = [
         startDate: "Aug 2022",
         endDate: "Jan 2025",
         description: [
+          "Abschluss: 1,8",
           "Entwicklung und Anpassung von E-Commerce-Funktionen im SAP Hybris Umfeld",
           "Integration und Schnittstellenmanagement",
           "Planung und Entwicklung von internen Software-Lösungen",
@@ -17,7 +18,7 @@ export const logEntryConfig: LogEntryProps[] = [
           "Dokumentation und Wissensvermittlung neuer Software und Prozesse",
           "Bau und Deployment neuer Online-Shop Releases",
         ],
-        deprecated: "Arbeitstätigkeit beendet",
+        deprecated: "Ausbildung beendet",
         changed: "",
       },
     },
@@ -42,7 +43,7 @@ export const logEntryConfig: LogEntryProps[] = [
     {
       entry: {
         added: true,
-        version: "1.0.0",
+        version: "1.1.0",
         position: "Bauzeichner im Hochbau",
         company: "IGS ING.-BÜRO BAUWESEN",
         startDate: "Okt 2016",
@@ -59,27 +60,20 @@ export const logEntryConfig: LogEntryProps[] = [
     {
       entry: {
         added: true,
-        version: "0.5.0",
-        position: "Berufsschüler",
-        company: "Berufskolleg Lübbecke",
-        startDate: "Aug 2022",
-        endDate: "Jan 2025",
-        description: [
-          "Einrichten eines IT-gestützten Arbeitsplatzes: 82/100 Punkten",
-          "Planen und Umsetzen eines Softwareprojektes: 94/100 Punkten",
-          "Planen eines Softwareproduktes: 85/100 Punkten",
-          "Entwicklung und Umsetzung von Algorithmen: 86/100 Punkten",
-          "Wirtschafts- und Sozialkunde: 69/100 Punkten",
-          "Berufsschulzeugnis: 1,8",
-        ],
-        deprecated: "",
-        changed: "",
+        version: "1.0.0",
+        position: "Auszubildender Bauzeichner im Hochbau",
+        company: "IGS ING.-BÜRO BAUWESEN",
+        startDate: "Aug 2012",
+        endDate: "Jun 2015",
+        description: ["Abschluss: 3,0"],
+        deprecated: "Ausbildung beendet",
+        changed: "Beginn Fachoberschule Technik",
       },
     },
     {
       entry: {
         added: true,
-        version: "0.4.0",
+        version: "0.3.0",
         position: "Student",
         company: "Hochschule Bielefeld (HSBI)",
         startDate: "Okt 2016",
@@ -103,7 +97,7 @@ export const logEntryConfig: LogEntryProps[] = [
     {
       entry: {
         added: true,
-        version: "0.3.0",
+        version: "0.2.0",
         position: "Student",
         company: "Leibniz University Hannover",
         startDate: "Okt 2016",
@@ -116,25 +110,12 @@ export const logEntryConfig: LogEntryProps[] = [
     {
       entry: {
         added: true,
-        version: "0.2.0",
+        version: "0.1.0",
         position: "Berufsschüler",
         company: "Berufsbildende Schulen Neustadt am Rübenberge",
         startDate: "2015",
         endDate: "2016",
         description: ["Fachhochschulreife Technik", "Abschluss: 2,8"],
-        deprecated: "",
-        changed: "",
-      },
-    },
-    {
-      entry: {
-        added: true,
-        version: "0.1.0",
-        position: "Auszubildender Bauzeichner im Hochbau",
-        company: "IGS ING.-BÜRO BAUWESEN",
-        startDate: "Aug 2012",
-        endDate: "Jun 2015",
-        description: ["Abschluss Bauzeichner im Hochbau: 3,0"],
         deprecated: "",
         changed: "",
       },
